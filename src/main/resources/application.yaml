@@ -1,0 +1,22 @@
+server:
+  port: 8098
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/polling_app?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+    password: TEst.2020
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+    time-zone: CST
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
