@@ -13,7 +13,7 @@ import javax.persistence.*;
  * Description role
  */
 @Entity
-@Table(name = "role")
+@Table(name = "roles")
 @Data
 @NoArgsConstructor
 public class Role {
