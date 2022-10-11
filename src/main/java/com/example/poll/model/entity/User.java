@@ -1,5 +1,6 @@
 package com.example.poll.model.entity;
 
+import com.example.poll.model.audit.DateAudit;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +22,7 @@ import java.util.Set;
 @Table(name = "user")
 @Data
 @NoArgsConstructor
-public class User {
+public class User extends DateAudit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
